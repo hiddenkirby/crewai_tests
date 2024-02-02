@@ -1,0 +1,4 @@
+langchain==0.1.4
+langchain-community==0.0.17
+gradio==4.16.0
+crewai==0.1.32
