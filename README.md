@@ -30,6 +30,6 @@ GEMINI-API-KEY=""
 
 ## to chat with local Ollama LLM
 
-1. <first spin up Ollama with a model>
+1. first spin up Ollama with a model
 2. right click ollama_test.py and click run
 3. go to http://127.0.0.1:7860 in your browser

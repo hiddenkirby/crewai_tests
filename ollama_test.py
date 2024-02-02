@@ -11,7 +11,7 @@ headers = {
 conversation_history = []
 
 def generate_response(prompt):
-    conversation_history.append(prompt)
+    conversation_history.append(prompt) # ensure conversation history is included in the prompt
 
     full_prompt = "\n".join(conversation_history)
 
