@@ -7,7 +7,7 @@
 1. run `python3 -m venv .venv`
 2. kill vscode terminal
 3. right click ollama_test.py and choose run (it wont successfully run if you don't have Ollama running locally)
-4. now you can `pip install`
+4. now you can `pip install -r requirements.txt`
 5. finally you need to setup your .env file with all the appropriate api keys
 
 ```
