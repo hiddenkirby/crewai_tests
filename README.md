@@ -33,3 +33,21 @@ GEMINI-API-KEY=""
 1. first spin up Ollama with a model
 2. right click ollama_test.py and click run
 3. go to http://127.0.0.1:7860 in your browser
+
+## to spin up privateGPT locally
+
+1. back out or leave this project directory
+
+```
+git clone https://github.com/imartinez/privateGPT && cd privateGPT && \
+python3.11 -m venv .venv && source .venv/bin/activate && \
+pip install --upgrade pip poetry && poetry install --with ui,local && ./scripts/setup
+
+# Launch the privateGPT API server **and** the gradio UI
+poetry run python3.11 -m private_gpt
+
+# In another terminal, create a new browser window on your private GPT!
+open http://127.0.0.1:8001/
+```
+
+2. default is using mistral and the embedding model - converts text into vector storage (chromdb)
