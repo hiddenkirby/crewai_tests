@@ -51,3 +51,8 @@ open http://127.0.0.1:8001/
 ```
 
 2. default is using mistral and the embedding model - converts text into vector storage (chromdb)
+
+## to spin up a local UI that uses chatgpt api to write sql and query a local sqlite3 db (under data/)
+
+1. ensure vevn and requirements are installed (see above)
+2. run `streamlit run example_openai_sql.py`
