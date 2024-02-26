@@ -8,6 +8,7 @@ load_dotenv()
 
 client = OpenAI()
 
+# TODO: move into tools dir
 tools = [
     {
         "type": "function",

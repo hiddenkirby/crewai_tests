@@ -1,3 +1,5 @@
+# TODO: Move this into tools
+
 import hashlib
 import requests
 import datetime

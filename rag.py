@@ -91,6 +91,7 @@ def fetch_articles_and_return_summary(description):
     get_articles(description)
     return titles_ranked_by_relatedness(description)
 
+# TODO: move this into tools
 tools = [
     {
         "type": "function",

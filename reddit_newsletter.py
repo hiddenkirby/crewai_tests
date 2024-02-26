@@ -34,6 +34,7 @@ client_secret = os.environ.get("REDDIT_CLIENT_SECRET")
 mistral = Ollama(model="mistral")
 
 
+# TODO: move this into tools dir
 class BrowserTool:
     @tool("Scrape reddit content")
     def scrape_reddit(max_comments_per_post=7):

@@ -18,6 +18,7 @@ MODEL_NAME="gpt-4"
 OPENAI_ORG_ID=""
 SERPER_API_KEY=""
 GEMINI-API-KEY=""
+EXA_API_KEY=""
 ```
 
 ## to spin up Ollama

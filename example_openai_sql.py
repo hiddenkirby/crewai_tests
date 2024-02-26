@@ -49,6 +49,7 @@ database_schema_string = "\n".join(
     f"Table: {table['table_name']}\nColumns: {', '.join(table['column_names'])}" for table in database_schema
 )
 
+# TODO: mvoe this into tools dir
 tools = [
     {
         "type": "function",
