@@ -1,3 +1,7 @@
+# To use: python3 meeting_prep.py
+#     answer the prompts
+# Ensure you have a EXA_API_KEY
+
 from crewai import Crew
 from meeting_prep_tasks import MeetingPreparationTasks
 from meeting_prep_agents import MeetingPreparationAgents

@@ -8,3 +8,4 @@ pandas==2.2.0
 scipy==1.12.0
 arxiv==2.1.0
 exa-py==1.0.8
+duckduckgo_search==4.4.3
