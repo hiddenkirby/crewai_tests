@@ -1,7 +1,11 @@
-# this script uses the langchain and crewai libraries to create a crew of agents that will work together to create a business plan for a new product.
-# person1 will analyze the market demand
-# person2 will analyze the technological feasibility
-# and person3 will analyze the business model and scalability.
+# this script uses the langchain and crewai libraries to create a crew of agents that will work together 
+
+
+### to create a business plan for a new product.
+NEW_PRODUCT="plugs for crocs (shoes) so that this iconic footware looks less like swiss cheese"
+# Agent1 will analyze the market demand
+# Agent2 will analyze the technological feasibility
+# and Agent3 will analyze the business model and scalability.
 
 import os
 from dotenv import load_dotenv
@@ -62,7 +66,7 @@ business_consultant = Agent(
 )
 
 task1 = Task(
-    description="""Analyze what the market demand for plugs for holes in crocs (shoes) so that this iconic footware looks less like swiss cheese. 
+    description=f"""Analyze what the market demand for {NEW_PRODUCT}. 
 		Write a detailed report with description of what the ideal customer might look like, and how to reach the widest possible audience. The report has to 
 		be concise with at least 10 bullet points and it has to address the most important areas when it comes to marketing this type of business.
     """,
@@ -70,7 +74,7 @@ task1 = Task(
 )
 
 task2 = Task(
-    description="""Analyze how to produce plugs for crocs (shoes) so that this iconic footware looks less like swiss cheese.. Write a detailed report 
+    description=f"""Analyze how to produce {NEW_PRODUCT}.. Write a detailed report 
 		with description of which technologies the business needs to use in order to make High Quality T shirts. The report has to be concise with 
 		at least 10  bullet points and it has to address the most important areas when it comes to manufacturing this type of business. 
     """,
@@ -78,8 +82,8 @@ task2 = Task(
 )
 
 task3 = Task(
-    description="""Analyze and summarize marketing and technological report and write a detailed business plan with 
-		description of how to make a sustainable and profitable "plugs for crocs (shoes) so that this iconic footware looks less like swiss cheese" business. 
+    description=f"""Analyze and summarize marketing and technological report and write a detailed business plan with 
+		description of how to make a sustainable and profitable "{NEW_PRODUCT}" business. 
 		The business plan has to be concise with 
 		at least 10  bullet points, 5 goals and it has to contain a time schedule for which goal should be achieved and when.
     """,
